@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - VCENTER=127.0.0.1
+      - VMRC_USER=webmks_user@vsphere.local
+      - VMRC_PASS=FakePassword1
+    ports:
+      - 8081:8081

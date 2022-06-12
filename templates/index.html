@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Index - Console Proxy</title>
+  </head>
+  <body>
+    <ul>
+      {{range .VMs}}
+      <li>
+        <a href="/console/{{.}}" >{{.}}</a>
+      </li>
+      {{end}}
+    </ul>
+  </body>
+</html>
